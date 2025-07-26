@@ -30,7 +30,7 @@ export default function NewVisitorForm() {
 
         setLoading(true);
         try {
-            const res = await fetch('http://localhost:5000/api/visitors', {
+            const res = await fetch('http://localhost:5000/api/guests', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(visitor)

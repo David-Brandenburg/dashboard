@@ -29,4 +29,7 @@ app.use("/api/devices", require("./routes/deviceRoutes"));
 // Neue Wetter‑Route
 app.use("/api/weather", require("./routes/weatherRoutes"));
 
+// Besucher‑Routen
+app.use("/api/guests", require("./routes/guestRoutes"));
+
 app.listen(5000, () => console.log("Server läuft auf Port 5000"));
